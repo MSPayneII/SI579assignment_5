@@ -1,0 +1,142 @@
+@import "mixins";
+
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 0;
+  }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+body {
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    font-size: 1rem; //16px
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+
+
+.image {
+    position: fixed;
+    background-image: url('../images/Michael_HDSHT-2r.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    width: 300px;
+    min-height: 17.5rem; //280px
+    min-width: 17.5rem; //280px
+    border-radius: 5px;
+    
+}
+  
+.scroll-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.scroll-down {
+    width: 100%;
+    position: fixed;
+    top: 40rem; //640px
+    text-align: center;
+
+
+    p {
+        font-size: 0.75rem; //12px
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+}
+
+
+
+.down-arrow {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: -15px;
+    opacity: 0.6;
+    transform: rotateZ(45deg);
+   
+}
+
+
+.social-media {
+    height: 22.5rem; //360px
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    i {
+        color: #000;
+    }
+
+    .insta {
+        margin-right: 3rem;
+    }
+
+    
+}
+
+#container {
+    padding-top: 2rem;
+    height: 400vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+#letters {
+    position: fixed;
+    text-align: center;
+    top: 28.125rem; //450px
+    width: 100%;
+
+    div {
+        display: inline-block;
+        font-size: 1.125rem; //18px
+        text-transform: uppercase;
+        font-family: 'Trade Winds', cursive;
+        transition: color 0.3s ease-in-out;
+
+        @include breakpoint-up(medium){
+            font-size: 1.5625rem;
+        }
+
+        @include breakpoint-up(large){
+            font-size: 2.8125rem;
+        }
+    }
+
+    .line {
+        border-bottom-width: 8px;
+        border-bottom-style: solid;
+        border-color: #a528d7;
+        width: 0.01%;
+        opacity: 0;
+      }
+
+    .description {
+        padding: 1rem;
+    }
+}
+
+
