@@ -3,7 +3,9 @@
 me to animate objects on a web page based on dom events. For this assignment, I've chosen 
 to add animation and color changes to the letters of my name & icons when the user
 scrolls down the webpage. The code was adapted from the choreographer js documentation and
-the choreograhper.min.js file was downloaded from github.
+the choreograhper.min.js file was downloaded from github. Some letters of my name are assigned
+to receive random hex colors while other letters are programmed to be specific colors. Also,
+the icons are set to have random colors every time the user scrolls up and down. 
 
 
 I've also used font awesome for my instagram and github icons */
