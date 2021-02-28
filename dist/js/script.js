@@ -2,7 +2,8 @@
 /* I've chosen to integrate the choreographer.js library which allows
 me to animate objects on a web page based on dom events. For this assignment, I've chosen 
 to add animation and color changes to the letters of my name & icons when the user
-scrolls down the webpage. The code was adapted from the choreographer js documentation
+scrolls down the webpage. The code was adapted from the choreographer js documentation and
+the choreograhper.min.js file was downloaded from github.
 
 
 I've also used font awesome for my instagram and github icons */
